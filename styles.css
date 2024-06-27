@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px; /* Adjusted padding for smaller screens */
+  max-width: 800px; /* Maximum width for better readability on larger screens */
+  margin: 0 auto; /* Center align container */
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+#landing-page {
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: url("images/hands.jpeg") no-repeat center center; /* Path to the image */
+  background-size: cover;
+  padding: 40px; /* Adjusted padding for smaller screens */
+  margin-bottom: 20px;
+}
+
+.banner {
+  background-color: rgba(
+    255,
+    179,
+    179,
+    0.4
+  ); /* Semi-transparent background color */
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul li {
+  font-size: 12px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+.details {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  background-color: rgba(
+    177,
+    182,
+    175,
+    0.426
+  ); /* Semi-transparent background color */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%; /* Ensures details box doesn't overflow on smaller screens */
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+h3 {
+  color: #333;
+}
+
+h2 {
+  background-color: darkgrey;
+  border-radius: 40%;
+  padding: 10px; /* Added padding for better visibility */
+}
+
+.animated-invitation {
+  animation: fadeIn 2s ease-in-out;
+  background: url("images/hands.jpeg") no-repeat center center; /* Path to the image */
+  background-size: cover;
+  padding: 40px; /* Adjusted padding for smaller screens */
+  color: rgb(255, 253, 253); /* Adjust text color to ensure readability */
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center align images */
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.gallery img {
+  width: 100px;
+  margin: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  #landing-page {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .animated-invitation {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .details {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .gallery img {
+    width: 80px; /* Adjusted image size for smaller screens */
+    margin: 5px; /* Adjusted margin for smaller screens */
+  }
+}
